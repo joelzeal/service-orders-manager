@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TopazGeneral" Class="GLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\sql2005;Initial Catalog=TopazGeneral;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TopazGeneralConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SUPPLIER" Member="SUPPLIERs">
+    <Type Name="SUPPLIER">
+      <Column Name="SupplierID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CurrencyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierGroupID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierAccountNumer" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierCreditLimit" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierCreditTerms" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="SupplierMemo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SupplierName" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Balance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DebitGL" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreditGL" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OldID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VATGLNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IRSGLNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TaxPayerID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.COMPANYPROFILE" Member="COMPANYPROFILEs">
+    <Type Name="COMPANYPROFILE">
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyAddress" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyDBA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CityID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CountryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyEmployerSSN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CurrencyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CompanyFirstMoOfYear" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyCurrencyStock" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyConsolidateTSheet" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CompanyVatNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyVat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyTelephone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyFax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

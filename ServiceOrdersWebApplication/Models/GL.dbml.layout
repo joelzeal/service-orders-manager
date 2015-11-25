@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GL">
+  <DataContextMoniker Name="/GLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="464f99a3-573a-485f-bc84-a687eec17140" absoluteBounds="1.125, 2.125, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/GLDataContext/SUPPLIER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79a8f50e-36ac-4bb2-bc5b-dd305efdf5d1" absoluteBounds="1.1400000000000001, 2.585, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8d50d4d-6964-443b-bc49-d8ec310ee718" absoluteBounds="4.5, 1.75, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/GLDataContext/COMPANYPROFILE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d39d88b4-34bb-4c7f-91fe-ac07bf9b9724" absoluteBounds="4.515, 2.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
